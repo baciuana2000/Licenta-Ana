@@ -1,22 +1,22 @@
-import { slide as Menu } from 'react-burger-menu';
-import React from 'react'
-import './Sidebar.css';
+import { slide as Menu } from "react-burger-menu";
+import React from "react";
+import "./Sidebar.css";
 
-export default function HamburgerNavbar(bbb) {
+export default function HamburgerNavbar() {
   return (
     <Menu>
       <a className="menu-item" href="/">
         Home
       </a>
-      <a className="menu-item" href="/salads">
-        Salads
+      <a className="menu-item" href="/contact">
+        Contact
       </a>
-      <a className="menu-item" href="/pizzas">
-        Pizzas
+      <a className="menu-item" href="/about">
+        About
       </a>
-      <a className="menu-item" href="/desserts">
-        Desserts@@@@@@@
+      <a className="menu-item" href="/movies">
+        Movies
       </a>
     </Menu>
   );
-};
+}
