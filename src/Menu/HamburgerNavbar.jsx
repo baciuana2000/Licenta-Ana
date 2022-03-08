@@ -1,22 +1,23 @@
 import { slide as Menu } from "react-burger-menu";
 import React from "react";
+import { BrowserRouter, Switch, Link } from "react-router-dom";
 import "./Sidebar.css";
 
 export default function HamburgerNavbar() {
   return (
     <Menu>
-      <a className="menu-item" href="/">
+      <Link className="menu-item" to="/">
         Home
-      </a>
-      <a className="menu-item" href="/contact">
+      </Link>
+      <Link className="menu-item" to="/contact">
         Contact
-      </a>
-      <a className="menu-item" href="/about">
+      </Link>
+      <Link className="menu-item" to="/about">
         About
-      </a>
-      <a className="menu-item" href="/movies">
+      </Link>
+      <Link className="menu-item" to="/movies">
         Movies
-      </a>
+      </Link>
     </Menu>
   );
 }

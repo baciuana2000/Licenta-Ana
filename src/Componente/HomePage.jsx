@@ -1,12 +1,9 @@
-import React from 'react'
-
+import React from "react";
+import Slider from "./Slider";
 export default function HomePage() {
   return (
-  <>
-    <div>HomePage</div>
-    <div>HomePage</div>
-    <div>HomePage</div>
-    <div>HomePage</div>
-  </>
-  )
+    <>
+      <Slider />;
+    </>
+  );
 }
