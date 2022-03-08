@@ -1,23 +1,34 @@
 import React from "react";
-import { Zoom } from "react-slideshow-image";
+import ReactDOM from "react-dom";
+import Carousel from "react-elastic-carousel";
+import Item from "./Item";
 import "./Slider.css";
-const Slider = () => {
-  const images = ["images/img3.jpg", "images/img3.jpg"];
 
-  const zoomInProperties = {
-    indicators: true,
-    scale: 1.4,
-  };
+const breakPoints = [
+  { id: 1, title: "item #1" },
+  { id: 2, title: "item #2" },
+  { id: 3, title: "item #3" },
+  { id: 4, title: "item #4" },
+];
+const Slider = () => {
   return (
-    <div>
-      <Zoom {...zoomInProperties}>
-        {images.map((each, index) => (
-          <div key={index} style={{ width: "100%" }}>
-            <img style={{ objectFit: "cover", width: "100%" }} src={each} />
-          </div>
-        ))}
-      </Zoom>
-    </div>
+    <>
+      <h1 style={{ textAlign: "center" }}>
+        Example to setup your carousel in react
+      </h1>
+      <div className="App">
+        <Carousel breakPoints={breakPoints}>
+          <Item>One</Item>
+          <Item>Two</Item>
+          <Item>Three</Item>
+          <Item>Four</Item>
+          <Item>Five</Item>
+          <Item>Six</Item>
+          <Item>Seven</Item>
+          <Item>Eight</Item>
+        </Carousel>
+      </div>
+    </>
   );
 };
 
